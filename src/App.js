@@ -1,15 +1,13 @@
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import NavBar from './componentes/NavBar';
-import ItemListenContainer from './componentes/ItemListenContainer';
-import ItemCount from './componentes/ItemCount';
+import NavBar from './Componentes/NavBar';
+import Items from './Containters/Items';
 
 function App() {
   return (
     <div classNameName="App">
       <NavBar/>
-          <ItemListenContainer/>
-        <ItemCount />
+        <Items />
     </div>
   );
 }

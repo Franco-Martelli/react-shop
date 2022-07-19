@@ -1,7 +1,9 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { useState } from 'react';
 
-const ItemCount = () => {
+const ItemCount = (props) => {
+
+
 
     const [cantidad, setcantidad] = useState (1)
 
@@ -16,11 +18,14 @@ const ItemCount = () => {
 
     return(
         <div>
-            <h4>botellas</h4>
-            <div >
-                <button onClick={restar} >-</button>
+            <img src={props.thumbnailUrl}></img>
+            <div>
+                <h5> {props.title}  titulo</h5>
+                <p>mas detalles</p>
+                <h6>{props.precio} precio</h6>
+                <button onClick={restar}> - </button>
                 <p>{cantidad}</p>
-                <button  onClick={sumar} >+</button>
+                <button  onClick={sumar}> + </button>
             </div>
             <button>agregar al carrito</button>
         </div>
