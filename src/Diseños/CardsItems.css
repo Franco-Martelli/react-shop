@@ -1,0 +1,21 @@
+
+
+.ContainerCard{
+    display: flex;
+    width: 100px;
+    height: 100px;
+   
+}
+
+.Card{
+    width: 150px;
+    height: 150px;
+}
+
+
+
+.ImgCard{
+    width: 150px;
+    height: 150px;
+}
+

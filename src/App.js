@@ -5,9 +5,11 @@ import Items from './Containters/Items';
 
 function App() {
   return (
-    <div classNameName="App">
+    <div className='App'>
       <NavBar/>
-        <Items />
+      <div className='cont'>
+        <Items/>
+      </div>
     </div>
   );
 }
