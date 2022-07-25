@@ -1,4 +1,4 @@
-export const Productos = [
+const Productos = [
         {
         'id': 1,
         'title': 'fernet',
@@ -24,3 +24,18 @@ export const Productos = [
         'thumbnailUrl': 'https://carrefourar.vtexassets.com/arquivos/ids/174843/7790975022345_01.jpg?v=637468566488530000'
         }
 ]
+
+
+let is_ok = true; 
+
+export const getProducts = async(time) => {
+        return new Promise((resolve, reject) => {
+                if (is_ok) {
+                    setTimeout(() => {
+                        resolve(Productos)
+                    }, time);
+                } else {
+                    reject("Error")
+                }
+            });
+}
